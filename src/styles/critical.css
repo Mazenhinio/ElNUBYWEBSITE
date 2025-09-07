@@ -1,0 +1,214 @@
+/* Critical CSS for above-the-fold content */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Critical layout styles */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Critical text styles */
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-slate-300 {
+  color: #cbd5e1;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-[#ED8722] {
+  color: #ed8722;
+}
+
+/* Critical background styles */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-slate-900 {
+  background-color: #0f172a;
+}
+
+/* Critical border styles */
+.border {
+  border-width: 1px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Critical transition styles */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Critical z-index */
+.z-50 {
+  z-index: 50;
+}
+
+/* Critical backdrop blur */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+}
+
+/* Critical shadow */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Critical responsive breakpoints */
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+  
+  .lg\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+}
+
+/* Critical animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Critical focus styles */
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Critical hover styles */
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+/* Critical dark mode */
+.dark .dark\:bg-slate-900 {
+  background-color: #0f172a;
+}
+
+.dark .dark\:text-white {
+  color: #ffffff;
+}
+
+/* Critical RTL support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+}
